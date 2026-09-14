@@ -152,8 +152,8 @@ function subjectBox(name,text,y){
  rounded(boxX,y,boxW,h,9,"rgba(255,255,255,.97)","#0b2d57");
  const val=(text||"").trim();
  if(val){
-   let size=29,lines=wrap(val,boxW-26,`700 ${size}px Arial`),max=2;
-   while(lines.length>max&&size>22){
+   let size=35,lines=wrap(val,boxW-26,`700 ${size}px Arial`),max=2;
+   while(lines.length>max&&size>32){
      size--;lines=wrap(val,boxW-30,`600 ${size}px Arial`)
    }
    ctx.fillStyle="#203a5b";
